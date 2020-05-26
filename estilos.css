@@ -1,0 +1,127 @@
+html, body{
+    height: 100%;
+}
+
+#back {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+}
+
+.botao {
+    padding: 2px;
+    border-radius: 8px;
+    z-index: 1000;
+    display: none;
+    background-color: darksalmon;
+    color: rgb(0, 7, 7);
+}
+
+header {
+    background-image: url(img/portfolio.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.whatsapp-link {
+   
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin: 16px;
+   
+}
+
+.portfolio-banner {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: .3s;
+}
+
+.portfolio-banner h1 {
+    margin-top: 0;
+}
+#accordion{
+    margin-top: 20px;
+}
+
+.linguagens-titulos {
+    background-color: #0275D8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #FFF;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.imagem img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:600px;
+    max-height:540px;
+    width: auto;
+    height: auto;
+}
+
+.javaS{
+    color: black; 
+}
+.grupo-radio, .contato-select{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.grupo-radio .radio:first-child{
+    margin-top: 0;
+}
+
+footer {
+    background: #333;
+    color: #FFF;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+footer address:last-child{
+    margin-bottom: 0;
+}
+
+@media(min-width: 768px){
+    #accordion {
+        margin-top: 0;
+    }
+}
+
+@media(min-width: 992px){
+    .portfolio-banner{
+        left: 0;
+        transform: translate(0,-80%);
+        width: 50%;
+    }
+    .portfolio-bannerWrapper{
+        position: relative;
+        height: 100%;
+    }
+}
